@@ -23,7 +23,7 @@ Earth game. At a minimum it should:
   ![WelcomePage]
 
 [MainView]: ./wireframes/MainView.png
-[WelcomePage]: ./wireframes/welcomePage.png
+[WelcomePage]: ./wireframes/WelcomePage.png
 
 
 ## Implementation Timeline
