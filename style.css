@@ -7,34 +7,48 @@ body, div, h3, ul, li, button {
 
 }
 
+.canvas {
+  display: block;
+  width:1000px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+
+h3 {
+  font-size: 35px;
+}
 body {
   font-family: sans-serif;
-  background: #c0c0c0;
-  width:1250px;
+  background: white;
 }
 
 .sidebar {
-  float: right;
   text-align: center;
   border: 1px solid #333333;
-  width: 220px;
-  height: 618px;
-  color:white;
+  width: 618px;
+  height: 220px;
+  color: #756d67;
+  margin: 10px auto;
+  background: #d7d7e0;
 }
 
 
 ul {
-  margin-top: 200px;
+  display: block;
+  float: left;
 }
 
 li {
-  padding: 15px;
+  padding: 10px;
 }
 
 button {
-  margin: 0 auto;
   width: 110px;
+  display: block;
   height: 50px;
+  float: right;
+  margin-right: 110px;
+  margin-top: 60px;
 }
 
 button:hover {

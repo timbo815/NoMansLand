@@ -6,14 +6,25 @@
     <Link rel=StyleSheet href="style.css" type="text/css">
   </head>
   <body>
-    <canvas></canvas>
+    <canvas class="canvas"></canvas>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <div class="sidebar">
       <h3>How to Play</h3>
       <ul>
-        <li>Up and Down arrows adjust barrel height</li>
-        <li>Spacebar to fire missile</li>
+        <h6>Player One</h6>
+        <li>"w" : barrel up</li>
+        <li>"s" : barrel down</li>
+        <li>"d" : fire missile</li>
       </ul>
+      <ul>
+        <h6>Player Two</h6>
+        <li>"↑" : barrel up</li>
+        <li>"↓" : barrel down</li>
+        <li>"←" : fire missile</li>
+      </ul>
+      <p>
+        First Player to score a hit wins!
+      </p>
       <button type="button" name="button">New Game</button>
     </div>
   </body>
