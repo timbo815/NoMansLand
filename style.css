@@ -4,7 +4,6 @@ body, div, h3, ul, li, h6, button {
   outline: none;
   list-style: none;
   font: inherit;
-
 }
 
 .canvas {
@@ -58,4 +57,17 @@ button {
 
 button:hover {
   cursor:pointer;
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #756d67;
+}
+
+footer {
+  width: 950px;
+  margin: 0 auto;
+  font-size: 22px;
 }
