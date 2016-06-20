@@ -1,4 +1,4 @@
-body, div, h3, ul, li, button {
+body, div, h3, ul, li, h6, button {
   margin: 0;
   padding: 0;
   outline: none;
@@ -25,8 +25,8 @@ body {
 .sidebar {
   text-align: center;
   border: 1px solid #333333;
-  width: 618px;
-  height: 220px;
+  width: 1000px;
+  height: 250px;
   color: #756d67;
   margin: 10px auto;
   background: #d7d7e0;
@@ -36,6 +36,11 @@ body {
 ul {
   display: block;
   float: left;
+  color: #055d05;
+}
+
+.ul-2 {
+  color: #c50707;
 }
 
 li {
