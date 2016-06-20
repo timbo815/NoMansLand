@@ -1,45 +1,56 @@
-# NoMansLand
+# NoMansLand [Live](http://www.timothycallahan.io/NoMansLand)
 
-## MVP
+  NoMans Land is a browser game written in pure Javascript and animated using
+HTML5/Canvas. It includes a computer AI for single player mode.
 
-  NoMansLand will be a JavaScript clone of the popular and classic Scorched
-Earth game. At a minimum it should:
+![Screenshot](images/NoMansLand.png)
 
-  [ ] Display a visually pleasing terrain with two opposing tanks
+### How to Play
 
-  [ ] Allow players to fire a shot from their tank
+  Visit the live site [Here](http://www.timothycallahan.io/NoMansLand).
+Each player controls a tank with the following keys:
 
-  [ ] Allow players to adjust the angle of their tank's barrel to change their
-     shot's trajectory.
+* Player 1
 
-  [ ] Register hits on an opposing tank and declare a winner
+`W` : tank barrel up
+`S` : tank barrel down
+`D` : fire missile
+`Q` : increase power
+`A` : decrease power
 
-## Wireframes
+* Player 2
 
-### Main View
-  ![MainView]
+`↑` : tank barrel up
+`↓` : tank barrel down
+`←` : fire missile
+`<` : increase power
+`>` : decrease power
 
-### WelcomePage
-  ![WelcomePage]
+First player to score a hit on the opposing tank wins.
 
-[MainView]: ./wireframes/MainView.png
-[WelcomePage]: ./wireframes/WelcomePage.png
+### Future Improvements
 
+##### Destructible terrain
+  I would like to explore the possibility of having destructible terrain.
+This could be implemented by overlaying the current terrain image over a
+second image with the terrain destroyed. By storing the state of the image on top,
+I could remove sections of it when a missile collision occurs.
 
-## Implementation Timeline
+##### Better AI
+  Currently the AI player makes a series of moves as dictated by a series
+of `setTimeout` functions:
+`````javascript
+setInterval(function () {
+  this.game.AIPlayer.move();
+}.bind(this), 300);
 
-### Phase One
-#### Game view and basic game logic
+setInterval(function () {
+  this.game.AIPlayer.fire();
+}.bind(this), 300);
 
-    * Create index.html with canvas element/draw main game view
-    * Create Game, GameView, Tank, and Missile classes as well as
-      a Utils file for utility code
-    * Add key listeners for adjusting barrel angle and firing missiles
+setInterval(function () {
+  this.game.AIPlayer.increasePower();
+}.bind(this), 4500);
+`````
 
-### Phase Two
-    * Fine tune physics of missile firing
-    * Register hits on opposing tank
-
-### Phase Three
-    * Create welcome modal, declared winner modal, add any extras (e.g.
-      landscape can be destroyed also, sounds etc.)
+This could be improved by adding more randomness to its movements.
