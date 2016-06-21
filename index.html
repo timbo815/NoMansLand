@@ -6,9 +6,41 @@
     <Link rel=StyleSheet href="style.css" type="text/css">
   </head>
   <body>
-    <canvas class="canvas"></canvas>
-    <script type="application/javascript" src="lib/bundle.js"></script>
-    <div class="sidebar">
+    <content class="main">
+      <div class="left-sidebar">
+        <h6>Player One</h6>
+        <ul>
+          <img src="./images/computer_key_W.png" alt="" />
+          <li>Barrel Up</li>
+          <img src="./images/computer_key_S.png" alt="" />
+          <li>Barrel Down</li>
+          <img src="./images/computer_key_D.png" alt="" />
+          <li>Fire Missile</li>
+          <img src="./images/computer_key_Q.png" alt="" />
+          <li>Power Up</li>
+          <img src="./images/computer_key_A.png" alt="" />
+          <li>Power Down</li>
+        </ul>
+      </div>
+      <div class="right-sidebar">
+        <h6>Player Two</h6>
+        <ul>
+          <img src="./images/computer_key_Arrow_Up.png" alt="" />
+          <li>Barrel Up</li>
+          <img src="./images/computer_key_Arrow_Down.png" alt="" />
+          <li>Barrel Down</li>
+          <img src="./images/computer_key_Arrow_Left.png" alt="" />
+          <li>Fire Missile</li>
+          <img src="./images/computer_key_Less_than_Comma.png" alt="" />
+          <li>Power Up</li>
+          <img src="./images/computer_key_Greater_than_Period.png" alt="" />
+          <li>Power Down</li>
+        </ul>
+      </div>
+      <canvas class="canvas"></canvas>
+      <script type="application/javascript" src="lib/bundle.js"></script>
+    </content>
+    <!-- <div class="sidebar">
       <h3>How to Play</h3>
       <ul>
         <h6>Player One</h6>
@@ -29,10 +61,12 @@
       <p>
         First Player to score a hit wins!
       </p>
-      <button type="button" id="new-ai-game">Play Against Computer</button>
-      <button type="button" id="new-game">New 2 Player Game</button>
-    </div>
+    </div> -->
     <footer>
+      <div class="buttons">
+        <button type="button" id="new-ai-game">Play Against Computer</button>
+        <button type="button" id="new-game">New 2 Player Game</button>
+      </div>
       <a href="https://github.com/timbo815" target="_blank">GitHub</a>
       <a href="http://www.timothycallahan.io" target="_blank">Portfolio</a>
       <a href="https://www.linkedin.com/in/timpcallahan" target="_blank">LinkedIn</a>

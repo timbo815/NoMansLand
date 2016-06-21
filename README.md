@@ -1,4 +1,5 @@
-# NoMansLand [Live](http://www.timothycallahan.io/nomansland)
+# NoMansLand
+[Live](http://www.timothycallahan.io/nomansland)
 
   NoMans Land is a browser game written in pure Javascript and animated using
 HTML5/Canvas. It includes a computer AI for single player mode.
