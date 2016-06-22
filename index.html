@@ -40,30 +40,15 @@
       <canvas class="canvas"></canvas>
       <script type="application/javascript" src="lib/bundle.js"></script>
     </content>
-    <!-- <div class="sidebar">
-      <h3>How to Play</h3>
-      <ul>
-        <h6>Player One</h6>
-        <li>"W" : barrel up</li>
-        <li>"S" : barrel down</li>
-        <li>"Q" : increase power</li>
-        <li>"A" : decrease power</li>
-        <li>"D" : fire missile</li>
-      </ul>
-      <ul class="ul-2">
-        <h6>Player Two</h6>
-        <li>"↑" : barrel up</li>
-        <li>"↓" : barrel down</li>
-        <li>"<" : increase power</li>
-        <li>">" : decrease power</li>
-        <li>"←" : fire missile</li>
-      </ul>
-      <p>
-        First Player to score a hit wins!
-      </p>
-    </div> -->
     <footer>
       <div class="buttons">
+        <a href="#openModal" class="how-to-play">How to Play</a>
+        <div id="openModal" class="modalDialog">
+          <a href="#close" title="Close" class="close">X</a>
+            <h2>How to Play</h2>
+            <p>Use the keys to adjust your tank's barrel height and firing power.</p>
+            <p>The first player to score a hit wins!</p>
+        </div>
         <button type="button" id="new-ai-game">Play Against Computer</button>
         <button type="button" id="new-game">New 2 Player Game</button>
       </div>
