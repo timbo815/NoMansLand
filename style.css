@@ -10,9 +10,9 @@ body, div, h3, ul, li, h6, button {
 
 .main {
   width: 1260px;
-  float:right;
 }
 .canvas {
+  margin: 0 auto;
   display: block;
   width:900px;
   border: 5px solid black;
